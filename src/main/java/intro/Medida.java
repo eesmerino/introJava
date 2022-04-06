@@ -7,11 +7,52 @@ package intro;
 public class Medida {
     //3.1 - Atributos - características da classe
     // 3.2 -Métodos e funções
-    public static void main(String [] args){
-       calcularAreaModoCurto();
-       calcularAreaModoExtenso();
+    public static void main(String [] args) {
+        //IF - Estrutura Condicional - Verificar uma condição ELSE senão
+        //switch = selecionar o comportamento do programa conforme a escolha da pessoa ou do software.
+        String opcao ="extenso";
+        switch (opcao){
+            case "ifSimples":
+                System.out.println("Você escolheu executar o método ifSimples");
+                ifSimples();
+                break;
+            case "curto":
+                System.out.println("Você escolheu executar método calcularAreaModoCurto");
+                calcularAreaModoCurto();
+               break;
+            case "extenso":
+                System.out.println("Você escolheu executar método extenso");
+                calcularAreaModoExtenso();
+                break;
+            default:
+                System.out.println("Você escolheu um outro valor que não tem opão associada");
+
+        }
+
 
     }
+
+    private static void ifSimples() {
+
+    }
+
+    public void mifSimples(){
+            //IF - Estrutura Condicional - Verificar uma condição
+            // ELSE - Senão
+
+            String modo = "curto";
+            if(modo =="curto"){
+                calcularAreaModoCurto();
+            }
+            else{
+                calcularAreaModoExtenso();
+            }
+
+            calcularAreaModoCurto();
+            calcularAreaModoExtenso();
+
+        }
+
     public static void calcularAreaModoCurto(){
 
         System.out.println("Calculo de áreas Modo Curto");
